@@ -1,6 +1,6 @@
 function Portfolio() {
   return (
-    <section>
+    <section id="portfolio">
       Portfolio
     </section>
   )
