@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap');
 
+:root {
+  --primary-color: #1abc9c;
+  --dark-color: #2c3e50;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
 /* navbar*/
 
 .navbar {
@@ -45,4 +53,159 @@
   }
 }
 
+/* start */
+.start-section {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 8rem 0 6rem;
+}
+.start-avatar {
+  width: 15rem;
+}
+.start-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+.start-subheading {
+  font-size: 1.25rem;
+}
+.divider-light .section-divider-line {
+  background-color: white;
+}
+.divider-light .section-divider-icon {
+  color: white;
+}
 
+@media (min-width: 992px) {
+  .start-heading {
+    font-size: 4rem;
+  }
+  .start-subheading {
+    font-size: 1.5rem;
+  }
+}
+
+/* portfolio */
+
+.portfolio-section {
+  padding: 6rem 0;
+}
+.portfolio-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+.portfolio-item {
+  position: relative;
+  max-width: 25rem;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.portfolio-item img {
+  width: 100%;
+  display: block;
+}
+.portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(26, 188, 156, 0.9);
+  opacity: 0;
+  transition: 0.2s;
+}
+.portfolio-item:hover .portfolio-item-caption {
+  opacity: 1;
+}
+.portfolio-item-caption-content {
+  color: white;
+  font-size: 4rem;
+}
+.portfolio-modal {
+  position: relative;
+  padding: 3.5rem 2rem 2rem;
+  text-align: center;
+}
+.portfolio-modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  border: none;
+  background: none;
+  color: #777;
+  font-size: 2rem;
+}
+.modal-title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+.modal-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 2rem;
+}
+.modal-divider div {
+  width: 4rem;
+  height: 0.25rem;
+  background-color: var(--dark-color);
+  border-radius: 1rem;
+}
+.modal-divider span {
+  color: var(--dark-color);
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+.modal-image {
+  width: 70%;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 0.25rem;
+}
+.modal-text {
+  max-width: 500px;
+  margin: 0 auto 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.close-window {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+/* divider */
+.section-divider {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-divider-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: var(--dark-color);
+  border-radius: 1rem;
+}
+.section-divider-icon {
+  color: var(--dark-color);
+  font-size: 2rem;
+  margin: 0 1rem;
+}
