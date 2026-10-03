@@ -255,3 +255,92 @@ body {
     margin-bottom: 1rem;
   }
 }
+
+/* contact */
+.contact-section {
+  padding: 6rem 0;
+}
+.contact-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  text-align: center;
+}
+.contact-form {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.contact-form-group {
+  margin-bottom: 1.5rem;
+}
+.floating-field {
+  position: relative;
+}
+.contact-form .form-control {
+  border: none;
+  border-bottom: 2px solid #ced4da;
+  border-radius: 0;
+  padding: 1.5rem 0.5rem 0.5rem ;
+  font-size: 1rem;
+  box-shadow: none;
+  color: var(--dark-color);
+}
+.floating-field label {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  color: #6c757d;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.floating-field .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+.floating-field .form-control:focus + label,
+.floating-field.has-value label {
+  top: 0;
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+.floating-field .form-control.has-error {
+  border-bottom: 2px solid #dc3545;
+}
+.error-icon {
+  position: absolute;
+  right: 0;
+  top: 1.15rem;
+  color: #dc3545;
+  font-size: 0.9rem;
+}
+.floating-field .form-control.has-error {
+  padding-right: 2rem;
+}
+.contact-form textarea.form-control {
+  min-height: 100px;
+  resize: vertical;
+}
+.error-message {
+  color: #dc3545;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+.contact-button {
+  background-color: var(--primary-color) !important;
+  border: none !important;
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.5rem;
+}
+.contact-button:disabled {
+  opacity: 0.65;
+}
+.contact-button:hover:not(:disabled) {
+  background-color: #159a80 !important;
+}
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 4rem 1.5rem;
+  }
+}
